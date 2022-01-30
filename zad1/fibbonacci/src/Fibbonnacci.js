@@ -15,7 +15,7 @@ function Fibonacci(){
     const getResult = (value) => {
         setK(value);
         setResult(getKFibonnaci(value))
-        if(value != null)
+        if(value != null && value != "" && value != undefined)
             sendResultToBackend(value, getKFibonnaci(value))
     }
 
