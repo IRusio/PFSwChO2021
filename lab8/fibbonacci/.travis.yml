@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t irusio/PFSwChO2021/lab8/fibonnaci -f Dockerfile.dev1 .
+  - docker build -t irusio/PFSwChO2021/lab8/fibonnaci -f lab8/fibonnaci/Dockerfile.dev1 .
 
 script:
   - docker run -e CI=true irusio/PFSwChO2021/lab8/fibbonacci npm run test
