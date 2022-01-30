@@ -13,10 +13,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "Fibbonacci-test"
+  app: "fibbonacci-test"
   env: "fibbonaccitest-env"
   bucket_name: "elasticbeanstalk-us-east-1-092118888492"
-  bucket_path: "Fibbonacci"
+  bucket_path: "fibbonacci"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
