@@ -13,5 +13,9 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "Fibbonacci-env"
-  env:"fibbonacci"
+  app: "Fibbonacci"
+  env: "fibbonacci-env"
+  bucket_name: "elasticbeanstalk-us-east-1-092118888492"
+  bucket_path: "Fibbonacci"
+  on:
+    branch: main
