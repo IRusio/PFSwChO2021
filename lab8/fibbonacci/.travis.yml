@@ -1,0 +1,17 @@
+sudo: required
+language: generic
+
+services: 
+  - docker
+
+before_install:
+  - docker build -t irusio/fibonnaci -f Dockerfile.dev1 .
+
+script:
+  - docker run -e CI=true irusio/fibbonacci npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "Fibbonacci-env"
+  env:"fibbonacci"
