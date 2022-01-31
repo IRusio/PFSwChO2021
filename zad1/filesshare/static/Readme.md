@@ -1,3 +1,6 @@
+# Link do repo
+https://github.com/IRusio/PFSwChO2021/tree/master/zad1
+
 # Wstep
 calosc uslugi jest opakowana w docker-compose, wiec komenda do uruchomienia:
 docker-compose up -d 
@@ -12,3 +15,7 @@ mamy 5 serwisów:
 
 # Podsumowanie
 ogólnie podsumowywując rozbudowanie serwisów o kolejny, 6 serwis nie sprawiałoby raczej większych problemów, a opcji które by na to pozwalało jest kilka: takich jak baza danych, dodatkowy serwis do współdzielenia zdjęć, bądź też naszykowanie kolejnego mikrofrontendu do wyświetlania readme ;) 
+
+![Foo](./ss1.png)
+![Foo](./ss2.png)
+![Foo](./ss3.png)
